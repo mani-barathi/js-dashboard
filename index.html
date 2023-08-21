@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="bg-content">
+        <h1 class="clock"></h1>
+        <h2 class="main-text"></h2>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <p class="quote"></p>
+
+    <div class="weather-container">
+      <h3 class="city"></h3>
+      <p class="weather"></p>
+    </div>
+
+    <div class="task-container">
+      <form class="task-form">
+        <input class="task-input" placeholder="Add a Task..." required />
+      </form>
+      <!-- <div class="task">
+        <p>This is a task</p>
+        <button>&minus;</button>
+      </div>
+      <div class="task">
+        <p class="completed">This is a task</p>
+        <button>&minus;</button>
+      </div> -->
+
+      <p class="no-task-found">You don't have any tasks!</p>
+    </div>
+  </body>
+</html>

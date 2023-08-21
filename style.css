@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background-image: url("./background.jpg"); */
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* transition: all 0.5s ease-in; */
+}
+
+.clock {
+  font-size: 150px;
+  font-weight: 400;
+  color: #f5f5f5;
+  text-shadow: 0px 1px 3px rgb(60, 60, 60);
+  text-align: center;
+}
+
+.main-text {
+  font-size: 50px;
+  font-weight: 400;
+  color: #f5f5f5;
+  text-shadow: 0px 1px 3px rgb(60, 60, 60);
+  text-align: center;
+}
+
+.quote {
+  position: fixed;
+  bottom: 8px;
+  left: 50%;
+  color: white;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.weather-container {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  color: white;
+  text-align: right;
+}
+
+.task-container {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  padding: 2px 0px;
+  background-color: #f5f5f5;
+  border-radius: 2px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.task-form {
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.651);
+}
+
+.task-input {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.task p {
+  flex: 1;
+  padding: 8px;
+}
+
+.task button {
+  width: 24px;
+  height: 24px;
+  color: crimson;
+  background-color: rgba(220, 20, 60, 0.315);
+  border-radius: 50%;
+  margin-right: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  opacity: 0;
+}
+
+.task:hover button {
+  opacity: 1;
+}
+
+.task:hover {
+  background-color: rgba(128, 128, 128, 0.106);
+}
+
+.task p.completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.no-task-found {
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+  display: none;
+}
