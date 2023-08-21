@@ -11,8 +11,8 @@ const taskForm = document.querySelector(".task-form");
 const noTaskElement = document.querySelector(".no-task-found");
 
 const userName = "Mani";
-const WEATHER_API_KEY = "8614fa21b9d8e2e61d67c766938e4fc5";
-const UNSPLASH_API_KEY = "3sWdsnenOHq87F1He2VyEjG5Ron3434Nw6lvnFkmlyA";
+const WEATHER_API_KEY = ""; // get API key from  https://openweathermap.org/
+const UNSPLASH_API_KEY = ""; // get API key from https://unsplash.com/oauth/applications
 const cityName = "Chennai";
 let tasks = [];
 
